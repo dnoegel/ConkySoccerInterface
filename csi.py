@@ -8,9 +8,9 @@ import locale
 locale.setlocale(locale.LC_ALL, '')
 
 ## Define League
-LEAGUE_NAME = "em12"
-LEAGUE_SAISON = "2012"
-LEAGUE_ID = 429
+LEAGUE_NAME = "fifa2014"
+LEAGUE_SAISON = "2014"
+LEAGUE_ID = 739
 
 ## SOAP Interface
 URL = "http://www.openligadb.de/Webservices/Sportsdata.asmx?WSDL"
