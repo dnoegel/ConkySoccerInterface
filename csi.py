@@ -8,9 +8,9 @@ import locale
 locale.setlocale(locale.LC_ALL, '')
 
 ## Define League
-LEAGUE_NAME = "fifa2014"
-LEAGUE_SAISON = "2014"
-LEAGUE_ID = 739
+LEAGUE_NAME = "bl1"
+LEAGUE_SAISON = "2015"
+LEAGUE_ID = 848
 
 ## SOAP Interface
 URL = "http://www.openligadb.de/Webservices/Sportsdata.asmx?WSDL"
@@ -35,7 +35,8 @@ for match in reversed(matches):
         goals =  "({0}) vs ({1})".format(match.matchResults.matchResult[0].pointsTeam1, match.matchResults.matchResult[0].pointsTeam2)
     else:
         goals = "vs"
-    print """{team1} {goals} {team2}
+    print """
+{team1} {goals} {team2}
     {start_time}\n""".format(team1=match.nameTeam1.encode("utf-8"),
         team2=match.nameTeam2.encode("utf-8"), 
         goals=goals, start_time=match.matchDateTime.strftime("%a, %H:%M Uhr"))
